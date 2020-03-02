@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3907075C240A4204009DB245 /* picsum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3907075B240A4204009DB245 /* picsum.swift */; };
+		3907075E240A4425009DB245 /* webCall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3907075D240A4425009DB245 /* webCall.swift */; };
 		39785F4E2408EC13002DCE2C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39785F4D2408EC13002DCE2C /* AppDelegate.swift */; };
 		39785F502408EC13002DCE2C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39785F4F2408EC13002DCE2C /* SceneDelegate.swift */; };
 		39785F522408EC13002DCE2C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39785F512408EC13002DCE2C /* ViewController.swift */; };
@@ -16,6 +18,7 @@
 		39785F5D2408EC14002DCE2C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39785F5B2408EC14002DCE2C /* LaunchScreen.storyboard */; };
 		39785F682408EC15002DCE2C /* MediaMagicMachineTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39785F672408EC15002DCE2C /* MediaMagicMachineTestTests.swift */; };
 		39785F732408EC15002DCE2C /* MediaMagicMachineTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39785F722408EC15002DCE2C /* MediaMagicMachineTestUITests.swift */; };
+		39785F822409223E002DCE2C /* CustomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39785F812409223E002DCE2C /* CustomeCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3907075B240A4204009DB245 /* picsum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = picsum.swift; sourceTree = "<group>"; };
+		3907075D240A4425009DB245 /* webCall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = webCall.swift; sourceTree = "<group>"; };
 		39785F4A2408EC13002DCE2C /* MediaMagicMachineTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MediaMagicMachineTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		39785F4D2408EC13002DCE2C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		39785F4F2408EC13002DCE2C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -51,6 +56,7 @@
 		39785F6E2408EC15002DCE2C /* MediaMagicMachineTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MediaMagicMachineTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		39785F722408EC15002DCE2C /* MediaMagicMachineTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaMagicMachineTestUITests.swift; sourceTree = "<group>"; };
 		39785F742408EC15002DCE2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		39785F812409223E002DCE2C /* CustomeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomeCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,11 +109,13 @@
 			children = (
 				39785F4D2408EC13002DCE2C /* AppDelegate.swift */,
 				39785F4F2408EC13002DCE2C /* SceneDelegate.swift */,
-				39785F512408EC13002DCE2C /* ViewController.swift */,
 				39785F532408EC13002DCE2C /* Main.storyboard */,
 				39785F592408EC14002DCE2C /* Assets.xcassets */,
 				39785F5B2408EC14002DCE2C /* LaunchScreen.storyboard */,
 				39785F5E2408EC14002DCE2C /* Info.plist */,
+				39785F84240923AC002DCE2C /* Model */,
+				39785F80240921ED002DCE2C /* View */,
+				39785F832409224A002DCE2C /* Controller */,
 				39785F562408EC13002DCE2C /* MediaMagicMachineTest.xcdatamodeld */,
 			);
 			path = MediaMagicMachineTest;
@@ -129,6 +137,31 @@
 				39785F742408EC15002DCE2C /* Info.plist */,
 			);
 			path = MediaMagicMachineTestUITests;
+			sourceTree = "<group>";
+		};
+		39785F80240921ED002DCE2C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				39785F812409223E002DCE2C /* CustomeCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		39785F832409224A002DCE2C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				39785F512408EC13002DCE2C /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		39785F84240923AC002DCE2C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3907075B240A4204009DB245 /* picsum.swift */,
+				3907075D240A4425009DB245 /* webCall.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,8 +296,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				39785F582408EC13002DCE2C /* MediaMagicMachineTest.xcdatamodeld in Sources */,
+				39785F822409223E002DCE2C /* CustomeCell.swift in Sources */,
+				3907075E240A4425009DB245 /* webCall.swift in Sources */,
 				39785F522408EC13002DCE2C /* ViewController.swift in Sources */,
 				39785F4E2408EC13002DCE2C /* AppDelegate.swift in Sources */,
+				3907075C240A4204009DB245 /* picsum.swift in Sources */,
 				39785F502408EC13002DCE2C /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -441,6 +477,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 62Z9HRH9G6;
 				INFOPLIST_FILE = MediaMagicMachineTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -459,6 +496,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 62Z9HRH9G6;
 				INFOPLIST_FILE = MediaMagicMachineTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
